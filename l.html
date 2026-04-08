@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cano Kafe Menü</title>
+    <style>
+        :root {
+            --ana-renk: #2c3e50;
+            --vurgu-renk: #e67e22;
+            --arka-plan: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--arka-plan);
+            margin: 0;
+            padding: 0;
+            color: var(--ana-renk);
+            /* Mobil dokunma hassasiyeti ayarı */
+            touch-action: manipulation;
+        }
+
+        header {
+            background-color: var(--ana-renk);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .kategori-baslik {
+            border-bottom: 2px solid var(--vurgu-renk);
+            display: inline-block;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            font-size: 1.4rem;
+        }
+
+        .urun-kart {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .urun-bilgi h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .urun-bilgi p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .fiyat {
+            font-weight: bold;
+            color: var(--vurgu-renk);
+            font-size: 1.2rem;
+            white-space: nowrap;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CANO KAFE</h1>
+    <p>Lezzetin Dijital Hali</p>
+</header>
+
+<div class="container">
+    <h2 class="kategori-baslik">Sıcak İçecekler</h2>
+    
+    <div class="urun-kart">
+        <div class="urun-bilgi">
+            <h3>Türk Kahvesi</h3>
+            <p>Geleneksel yöntemle hazırlanan bol köpüklü.</p>
+        </div>
+        <div class="fiyat">45 TL</div>
+    </div>
+
+    <div class="urun-kart">
+        <div class="urun-bilgi">
+            <h3>Latte</h3>
+            <p>Yumuşak içimli bol sütlü İtalyan kahvesi.</p>
+        </div>
+        <div class="fiyat">65 TL</div>
+    </div>
+
+    <h2 class="kategori-baslik">Atıştırmalıklar</h2>
+
+    <div class="urun-kart">
+        <div class="urun-bilgi">
+            <h3>Çikolatalı Brownie</h3>
+            <p>Belçika çikolatası ve taze ceviz ile.</p>
+        </div>
+        <div class="fiyat">85 TL</div>
+    </div>
+</div>
+
+<footer>
+    Siparişi lütfen garsona iletiniz.
+</footer>
+
+</body>
+</html>
